@@ -1,0 +1,3474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_722da2847e2285130a71d0f824258ac1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_722da2847e2285130a71d0f824258ac1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_722da2847e2285130a71d0f824258ac1 = L.map(
+                "map_722da2847e2285130a71d0f824258ac1",
+                {
+                    center: [-23.5, -48.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9068a9e1f88151f6f7c8236633d181e5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9068a9e1f88151f6f7c8236633d181e5.addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            var circle_marker_dde0a6a77606b961d3a8457c6f6de5dd = L.circleMarker(
+                [-23.7028125, -45.4679375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_dde0a6a77606b961d3a8457c6f6de5dd.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4679375 -23.7028125)<br><b>COD:</b> 588P7GWJ+VR<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b96787f6e137a125e09cb0cbe34c42f3 = L.circleMarker(
+                [-23.7101875, -45.4430625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_b96787f6e137a125e09cb0cbe34c42f3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4430625 -23.7101875)<br><b>COD:</b> 588P7HQ4+WQ<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_917340f67f9dbef4700c038ae8a494f4 = L.circleMarker(
+                [-23.7129375, -45.4410625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_917340f67f9dbef4700c038ae8a494f4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4410625 -23.7129375)<br><b>COD:</b> 588P7HP5+RH<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ccfe5a887d75a8db9135a100bf245452 = L.circleMarker(
+                [-23.7199375, -45.4594375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ccfe5a887d75a8db9135a100bf245452.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4594375 -23.7199375)<br><b>COD:</b> 588P7GJR+26<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5741b8eef1abfd8d660c75e24c8a41a4 = L.circleMarker(
+                [-23.7241875, -45.4636875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_5741b8eef1abfd8d660c75e24c8a41a4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4636875 -23.7241875)<br><b>COD:</b> 588P7GGP+8G<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_da133634a0596ba774ec0ac06d143878 = L.circleMarker(
+                [-23.7056875, -45.4691875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_da133634a0596ba774ec0ac06d143878.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4691875 -23.7056875)<br><b>COD:</b> 588P7GVJ+P8<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e4a84bc7b57defe5eeae08da8107525 = L.circleMarker(
+                [-23.5905625, -45.3734375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_2e4a84bc7b57defe5eeae08da8107525.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3734375 -23.5905625)<br><b>COD:</b> 588PCJ5G+QJ<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_422dee2ff30f89a69d47780767cf250d = L.circleMarker(
+                [-23.5878125, -45.3516875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_422dee2ff30f89a69d47780767cf250d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3516875 -23.5878125)<br><b>COD:</b> 588PCJ6X+V8<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_387a871dec8b4386059bb35667852c04 = L.circleMarker(
+                [-23.6165625, -45.4341875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_387a871dec8b4386059bb35667852c04.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4341875 -23.6165625)<br><b>COD:</b> 588P9HM8+98<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f2ce46488e90aa9686dac6c8598b224 = L.circleMarker(
+                [-23.7043125, -45.5146875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8f2ce46488e90aa9686dac6c8598b224.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5146875 -23.7043125)<br><b>COD:</b> 588P7FWP+74<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bfdcec54299530b9c47b14707bc57cc6 = L.circleMarker(
+                [-23.6014375, -45.3948125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_bfdcec54299530b9c47b14707bc57cc6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3948125 -23.6014375)<br><b>COD:</b> 588P9JX4+C3<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_90c62f53cfcb8d2b2759c291db7da20e = L.circleMarker(
+                [-23.7031875, -45.5053125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_90c62f53cfcb8d2b2759c291db7da20e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5053125 -23.7031875)<br><b>COD:</b> 588P7FWV+PV<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d01e91019e368b77d55f413f623bae5b = L.circleMarker(
+                [-23.6336875, -45.4551875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_d01e91019e368b77d55f413f623bae5b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4551875 -23.6336875)<br><b>COD:</b> 588P9G8V+GW<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec999d98e20d8d6e06e9cea92a84e611 = L.circleMarker(
+                [-23.6271875, -45.4439375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ec999d98e20d8d6e06e9cea92a84e611.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4439375 -23.6271875)<br><b>COD:</b> 588P9HF4+4C<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_073d23b366352d8c3dae3fd4fc8367b4 = L.circleMarker(
+                [-23.7195625, -45.4523125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_073d23b366352d8c3dae3fd4fc8367b4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4523125 -23.7195625)<br><b>COD:</b> 588P7GJX+53<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4ffeb38161c26c7dc372c813f94eb2b = L.circleMarker(
+                [-23.6888125, -45.4786875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a4ffeb38161c26c7dc372c813f94eb2b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4786875 -23.6888125)<br><b>COD:</b> 588P8G6C+FG<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47e1fdcd6a31a860c30f666b583d1c55 = L.circleMarker(
+                [-23.7096875, -45.5064375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_47e1fdcd6a31a860c30f666b583d1c55.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5064375 -23.7096875)<br><b>COD:</b> 588P7FRV+4C<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9dd79036c5e3c3161099551a86a255f = L.circleMarker(
+                [-23.6324375, -45.4413125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e9dd79036c5e3c3161099551a86a255f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4413125 -23.6324375)<br><b>COD:</b> 588P9H95+2F<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_04a1600388810f09642ac3ec44f4c66a = L.circleMarker(
+                [-23.7019375, -45.4866875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_04a1600388810f09642ac3ec44f4c66a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4866875 -23.7019375)<br><b>COD:</b> 588P7GX7+68<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8435309ed440dff2a5cfcae3b60b8bcc = L.circleMarker(
+                [-23.5685625, -45.2965625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8435309ed440dff2a5cfcae3b60b8bcc.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2965625 -23.5685625)<br><b>COD:</b> 588PCPJ3+H9<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f83dbf725fae709313ef867aef6f2fff = L.circleMarker(
+                [-23.6966875, -45.4560625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_f83dbf725fae709313ef867aef6f2fff.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4560625 -23.6966875)<br><b>COD:</b> 588P8G3V+8H<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_14f1d04834c70849c5bcfc566a5f5b97 = L.circleMarker(
+                [-23.7055625, -45.4726875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_14f1d04834c70849c5bcfc566a5f5b97.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4726875 -23.7055625)<br><b>COD:</b> 588P7GVG+QW<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_15e1b697e7c12c886135b78cf7406fba = L.circleMarker(
+                [-23.6478125, -45.4325625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_15e1b697e7c12c886135b78cf7406fba.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4325625 -23.6478125)<br><b>COD:</b> 588P9H28+VX<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6a5fd47de2822c971c0cb74007aba29 = L.circleMarker(
+                [-23.7088125, -45.4684375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e6a5fd47de2822c971c0cb74007aba29.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4684375 -23.7088125)<br><b>COD:</b> 588P7GRJ+FJ<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1df73640d24918111afd61f06bb775dc = L.circleMarker(
+                [-23.7246875, -45.4730625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1df73640d24918111afd61f06bb775dc.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4730625 -23.7246875)<br><b>COD:</b> 588P7GGG+4Q<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_146a5d505b8b184aff9b5ef0a143e7cd = L.circleMarker(
+                [-23.5733125, -45.3398125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_146a5d505b8b184aff9b5ef0a143e7cd.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3398125 -23.5733125)<br><b>COD:</b> 588PCMG6+M3<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8bd357156ea019198d93edfa76946703 = L.circleMarker(
+                [-23.7245625, -45.4734375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8bd357156ea019198d93edfa76946703.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4734375 -23.7245625)<br><b>COD:</b> 588P7GGG+5J<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64d4399f8a03337c6b788748afc7574e = L.circleMarker(
+                [-23.7015625, -45.4760625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_64d4399f8a03337c6b788748afc7574e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4760625 -23.7015625)<br><b>COD:</b> 588P7GXF+9H<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a8cd5e765aebafae5a5158461c872de = L.circleMarker(
+                [-23.6956875, -45.4821875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7a8cd5e765aebafae5a5158461c872de.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4821875 -23.6956875)<br><b>COD:</b> 588P8G39+P4<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7115bf7e147721605a0412157d571367 = L.circleMarker(
+                [-23.7105625, -45.4566875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7115bf7e147721605a0412157d571367.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4566875 -23.7105625)<br><b>COD:</b> 588P7GQV+Q8<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fac8d8ca8f5a5d09749c1328056e176f = L.circleMarker(
+                [-23.7040625, -45.4580625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_fac8d8ca8f5a5d09749c1328056e176f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4580625 -23.7040625)<br><b>COD:</b> 588P7GWR+9Q<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3526a75bb89e6967987cc4c7fd6196b3 = L.circleMarker(
+                [-23.6984375, -45.4598125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3526a75bb89e6967987cc4c7fd6196b3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4598125 -23.6984375)<br><b>COD:</b> 588P8G2R+J3<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38ef10498beb1e65a51339a605afb522 = L.circleMarker(
+                [-23.6995625, -45.4848125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_38ef10498beb1e65a51339a605afb522.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4848125 -23.6995625)<br><b>COD:</b> 588P8G28+53<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_750ec07487db94528c769a1af11113e0 = L.circleMarker(
+                [-23.7121875, -45.4654375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_750ec07487db94528c769a1af11113e0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4654375 -23.7121875)<br><b>COD:</b> 588P7GQM+4R<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d81e1f362d418f144103961fd966146 = L.circleMarker(
+                [-23.7121875, -45.5039375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_0d81e1f362d418f144103961fd966146.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5039375 -23.7121875)<br><b>COD:</b> 588P7FQW+4C<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed483fa5b86af1ec4207e255a737bd7a = L.circleMarker(
+                [-23.7148125, -45.4686875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ed483fa5b86af1ec4207e255a737bd7a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4686875 -23.7148125)<br><b>COD:</b> 588P7GPJ+3G<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b7670480d7e1fb76a1d5b244e9ae417 = L.circleMarker(
+                [-23.6960625, -45.4870625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4b7670480d7e1fb76a1d5b244e9ae417.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4870625 -23.6960625)<br><b>COD:</b> 588P8G37+H5<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_806e763242914fdf5dd04f755a067c4d = L.circleMarker(
+                [-23.6960625, -45.4824375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_806e763242914fdf5dd04f755a067c4d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4824375 -23.6960625)<br><b>COD:</b> 588P8G39+H2<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74a34171231982253311156284418c9a = L.circleMarker(
+                [-23.7218125, -45.4665625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_74a34171231982253311156284418c9a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4665625 -23.7218125)<br><b>COD:</b> 588P7GHM+79<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0f9b1a4ba145d3ec014befd3ec782fe = L.circleMarker(
+                [-23.6901875, -45.4510625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e0f9b1a4ba145d3ec014befd3ec782fe.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4510625 -23.6901875)<br><b>COD:</b> 588P8G5X+WH<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec4cead293ab3c866ae783783578991d = L.circleMarker(
+                [-23.7193125, -45.4396875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ec4cead293ab3c866ae783783578991d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4396875 -23.7193125)<br><b>COD:</b> 588P7HJ6+74<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_274c9cadbf7f0824ebd8c03b24f96d18 = L.circleMarker(
+                [-23.7065625, -45.4711875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_274c9cadbf7f0824ebd8c03b24f96d18.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4711875 -23.7065625)<br><b>COD:</b> 588P7GVH+9G<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e42e76feb11fae2a56c13744c48af1e5 = L.circleMarker(
+                [-23.6898125, -45.4621875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e42e76feb11fae2a56c13744c48af1e5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4621875 -23.6898125)<br><b>COD:</b> 588P8G6Q+34<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffd0e57c223b2f1f3d0b5f3454415adf = L.circleMarker(
+                [-23.6931875, -45.4549375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ffd0e57c223b2f1f3d0b5f3454415adf.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4549375 -23.6931875)<br><b>COD:</b> 588P8G4W+P2<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac9d85fdbe8a43c21dcfe253f2c8fcf0 = L.circleMarker(
+                [-23.5928125, -45.3674375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ac9d85fdbe8a43c21dcfe253f2c8fcf0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3674375 -23.5928125)<br><b>COD:</b> 588PCJ4M+V2<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3895fd649c1e8eefc6881a4efd956ffc = L.circleMarker(
+                [-23.6959375, -45.4870625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3895fd649c1e8eefc6881a4efd956ffc.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4870625 -23.6959375)<br><b>COD:</b> 588P8G37+J5<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f45ac54a9e5335ba688e74f7c3933c6a = L.circleMarker(
+                [-23.6018125, -45.3475625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_f45ac54a9e5335ba688e74f7c3933c6a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3475625 -23.6018125)<br><b>COD:</b> 588P9MX2+7X<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7896c03340dabd6e518cbe1a99360838 = L.circleMarker(
+                [-23.5994375, -45.3459375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7896c03340dabd6e518cbe1a99360838.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3459375 -23.5994375)<br><b>COD:</b> 588PCM23+6J<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4ace47791faba9f48f0832930c651a46 = L.circleMarker(
+                [-23.7220625, -45.4558125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4ace47791faba9f48f0832930c651a46.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4558125 -23.7220625)<br><b>COD:</b> 588P7GHV+5M<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81f5684144e8389fb1f0d69964789266 = L.circleMarker(
+                [-23.7050625, -45.5149375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_81f5684144e8389fb1f0d69964789266.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5149375 -23.7050625)<br><b>COD:</b> 588P7FVP+X2<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bea22595a036daf55062f94282b79c44 = L.circleMarker(
+                [-23.6935625, -45.4550625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_bea22595a036daf55062f94282b79c44.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4550625 -23.6935625)<br><b>COD:</b> 588P8G4V+HX<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c4a022128fe87265bead5ddd9b56c26e = L.circleMarker(
+                [-23.6975625, -45.4563125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c4a022128fe87265bead5ddd9b56c26e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4563125 -23.6975625)<br><b>COD:</b> 588P8G2V+XF<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c88ce0457a3eb22b6ea5aec7d8bb051a = L.circleMarker(
+                [-23.7055625, -45.5235625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c88ce0457a3eb22b6ea5aec7d8bb051a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5235625 -23.7055625)<br><b>COD:</b> 588P7FVG+QH<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64e3321df0d04447f7a6f0cd7a776e6c = L.circleMarker(
+                [-23.7113125, -45.4553125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_64e3321df0d04447f7a6f0cd7a776e6c.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4553125 -23.7113125)<br><b>COD:</b> 588P7GQV+FV<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30310f1a1b6a120255f8a16dec9220bc = L.circleMarker(
+                [-23.7125625, -45.4898125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_30310f1a1b6a120255f8a16dec9220bc.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4898125 -23.7125625)<br><b>COD:</b> 588P7GP6+X3<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e4be5ba4439423d206c7c7ecd46b125 = L.circleMarker(
+                [-23.5635625, -45.3376875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8e4be5ba4439423d206c7c7ecd46b125.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3376875 -23.5635625)<br><b>COD:</b> 588PCMP6+HW<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4ef2f82d1e3d868401ba661afa4eaab2 = L.circleMarker(
+                [-23.6015625, -45.3454375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4ef2f82d1e3d868401ba661afa4eaab2.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3454375 -23.6015625)<br><b>COD:</b> 588P9MX3+9R<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84da6bafe41552453cf55fd38e74fa17 = L.circleMarker(
+                [-23.5943125, -45.3648125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_84da6bafe41552453cf55fd38e74fa17.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3648125 -23.5943125)<br><b>COD:</b> 588PCJ4P+73<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92c2818d96e9936510d0cf97122eb8f2 = L.circleMarker(
+                [-23.5983125, -45.3640625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_92c2818d96e9936510d0cf97122eb8f2.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3640625 -23.5983125)<br><b>COD:</b> 588PCJ2P+M9<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0367bca12bc26e129457f94939015a1b = L.circleMarker(
+                [-23.5951875, -45.3651875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_0367bca12bc26e129457f94939015a1b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3651875 -23.5951875)<br><b>COD:</b> 588PCJ3M+WW<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae419872cd71d170b05a65d900d7976a = L.circleMarker(
+                [-23.6991875, -45.4871875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ae419872cd71d170b05a65d900d7976a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4871875 -23.6991875)<br><b>COD:</b> 588P8G27+84<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_50fd40c1be3af05ac628ec0324700062 = L.circleMarker(
+                [-23.6973125, -45.4598125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_50fd40c1be3af05ac628ec0324700062.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4598125 -23.6973125)<br><b>COD:</b> 588P8G3R+33<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1499c2c02dab6741cb62a2ae79b0485 = L.circleMarker(
+                [-23.5744375, -45.3308125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c1499c2c02dab6741cb62a2ae79b0485.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3308125 -23.5744375)<br><b>COD:</b> 588PCMG9+6M<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_541b634b50b7f5ea0002f028573dc004 = L.circleMarker(
+                [-23.6985625, -45.4705625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_541b634b50b7f5ea0002f028573dc004.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4705625 -23.6985625)<br><b>COD:</b> 588P8G2H+HQ<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e8fb7f71b621f207dfbb0ca6778b963 = L.circleMarker(
+                [-23.7243125, -45.4615625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_2e8fb7f71b621f207dfbb0ca6778b963.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4615625 -23.7243125)<br><b>COD:</b> 588P7GGQ+79<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bd61dfee64109122fa06029235ca7512 = L.circleMarker(
+                [-23.7106875, -45.5389375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_bd61dfee64109122fa06029235ca7512.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5389375 -23.7106875)<br><b>COD:</b> 588P7FQ6+PC<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8a48b4d4de93b3dc0239e84ffc3cea8 = L.circleMarker(
+                [-23.7193125, -45.5098125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a8a48b4d4de93b3dc0239e84ffc3cea8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5098125 -23.7193125)<br><b>COD:</b> 588P7FJR+73<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ae902d71d36a11ad7f6bc98ec2433a2 = L.circleMarker(
+                [-23.7238125, -45.4625625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3ae902d71d36a11ad7f6bc98ec2433a2.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4625625 -23.7238125)<br><b>COD:</b> 588P7GGP+FX<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc70e0fd25aeb6b382ff18affb7b5d82 = L.circleMarker(
+                [-23.6924375, -45.4471875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_dc70e0fd25aeb6b382ff18affb7b5d82.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4471875 -23.6924375)<br><b>COD:</b> 588P8H53+24<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96e761b8bcf786a48d4e974d79ae929d = L.circleMarker(
+                [-23.7098125, -45.5418125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_96e761b8bcf786a48d4e974d79ae929d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5418125 -23.7098125)<br><b>COD:</b> 588P7FR5+37<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f827f8fecc98bd494d7d12709ef1df96 = L.circleMarker(
+                [-23.5905625, -45.3645625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_f827f8fecc98bd494d7d12709ef1df96.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3645625 -23.5905625)<br><b>COD:</b> 588PCJ5P+Q5<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a0a258ceaaec8c8e3825de927a5722d = L.circleMarker(
+                [-23.7236875, -45.4469375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8a0a258ceaaec8c8e3825de927a5722d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4469375 -23.7236875)<br><b>COD:</b> 588P7HG3+G6<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac03c1abf9491913a446a7ceb1fe2a6a = L.circleMarker(
+                [-23.6940625, -45.4551875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ac03c1abf9491913a446a7ceb1fe2a6a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4551875 -23.6940625)<br><b>COD:</b> 588P8G4V+9W<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f3b9a0dcd4017cabceaf5f4c5f9762f = L.circleMarker(
+                [-23.7193125, -45.4458125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_2f3b9a0dcd4017cabceaf5f4c5f9762f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4458125 -23.7193125)<br><b>COD:</b> 588P7HJ3+7M<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24d705b80385d96d4377cc7110a5b82d = L.circleMarker(
+                [-23.6930625, -45.4519375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_24d705b80385d96d4377cc7110a5b82d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4519375 -23.6930625)<br><b>COD:</b> 588P8G4X+Q6<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_63f9263770f0edfa2674c3bfc02a7fc7 = L.circleMarker(
+                [-23.7013125, -45.4754375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_63f9263770f0edfa2674c3bfc02a7fc7.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4754375 -23.7013125)<br><b>COD:</b> 588P7GXF+FR<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11209f31ce33fb594dd58e3b52826b2b = L.circleMarker(
+                [-23.6999375, -45.4384375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_11209f31ce33fb594dd58e3b52826b2b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4384375 -23.6999375)<br><b>COD:</b> 588P8H26+2J<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c51abf18bb04f8c38fcc48dd4901a87a = L.circleMarker(
+                [-23.7183125, -45.4650625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c51abf18bb04f8c38fcc48dd4901a87a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4650625 -23.7183125)<br><b>COD:</b> 588P7GJM+MX<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c45e20d9404709a3db399da674505689 = L.circleMarker(
+                [-23.6969375, -45.4871875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c45e20d9404709a3db399da674505689.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4871875 -23.6969375)<br><b>COD:</b> 588P8G37+64<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6112d0cf5924014c9fe8344917200d9a = L.circleMarker(
+                [-23.5978125, -45.3641875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_6112d0cf5924014c9fe8344917200d9a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3641875 -23.5978125)<br><b>COD:</b> 588PCJ2P+V8<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7268ac14ab195f0bf940afbd5208510 = L.circleMarker(
+                [-23.7236875, -45.4468125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c7268ac14ab195f0bf940afbd5208510.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4468125 -23.7236875)<br><b>COD:</b> 588P7HG3+G7<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c44d2bda6c5eedd38be7c6e485950f33 = L.circleMarker(
+                [-23.6924375, -45.4494375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c44d2bda6c5eedd38be7c6e485950f33.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4494375 -23.6924375)<br><b>COD:</b> 588P8H52+26<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b12671b4b5be0c53b408075f062e3bb3 = L.circleMarker(
+                [-23.5929375, -45.3664375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_b12671b4b5be0c53b408075f062e3bb3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3664375 -23.5929375)<br><b>COD:</b> 588PCJ4M+RC<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f6e973fba2b0471f526ad7a7f5688a93 = L.circleMarker(
+                [-23.7313125, -45.4688125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_f6e973fba2b0471f526ad7a7f5688a93.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4688125 -23.7313125)<br><b>COD:</b> 588P7G9J+FF<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b544fe330136200fbebb7f6a2d1c12d3 = L.circleMarker(
+                [-23.7296875, -45.4626875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_b544fe330136200fbebb7f6a2d1c12d3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4626875 -23.7296875)<br><b>COD:</b> 588P7GCP+4W<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f138b6e41441cdac1f340b9d6484ce0 = L.circleMarker(
+                [-23.7339375, -45.4598125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3f138b6e41441cdac1f340b9d6484ce0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4598125 -23.7339375)<br><b>COD:</b> 588P7G8R+C3<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a11aecb63558dc1c45b7a01f8f8ede4 = L.circleMarker(
+                [-23.7088125, -45.5315625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_5a11aecb63558dc1c45b7a01f8f8ede4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5315625 -23.7088125)<br><b>COD:</b> 588P7FR9+F9<br><b>MUN:</b> Caraguatatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1b1c3ce725de31d2153fb88379e68f0 = L.circleMarker(
+                [-23.860563, -45.428063],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c1b1c3ce725de31d2153fb88379e68f0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.428063 -23.860563)<br><b>COD:</b> 588P4HQC+QQ<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3aa032eb63fa15b322ca789f2355f044 = L.circleMarker(
+                [-23.847313, -45.394938],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3aa032eb63fa15b322ca789f2355f044.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.394938 -23.847313)<br><b>COD:</b> 588P5J34+32<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01d46f750d86de466b9a4f8e310b407e = L.circleMarker(
+                [-23.848563, -45.283438],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_01d46f750d86de466b9a4f8e310b407e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.283438 -23.848563)<br><b>COD:</b> 588P5P28+HJ<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1da129905a56fbddcbf216982cac5bea = L.circleMarker(
+                [-23.822438, -45.365563],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1da129905a56fbddcbf216982cac5bea.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.365563 -23.822438)<br><b>COD:</b> 588P5JHM+2Q<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80a548ef242f389c5a55249def0407b3 = L.circleMarker(
+                [-23.810688, -45.362813],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_80a548ef242f389c5a55249def0407b3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.362813 -23.810688)<br><b>COD:</b> 588P5JQP+PV<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4cad33850be94907ae8ce954d78584bf = L.circleMarker(
+                [-23.850938, -45.399438],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4cad33850be94907ae8ce954d78584bf.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.399438 -23.850938)<br><b>COD:</b> 588P4JX2+J6<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b0c598685150b23057541219c7ddd1e = L.circleMarker(
+                [-23.854688, -45.290438],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_2b0c598685150b23057541219c7ddd1e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.290438 -23.854688)<br><b>COD:</b> 588P4PW5+4R<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ad17486f8cafec54e799d0bcd6f209b = L.circleMarker(
+                [-23.733938, -45.302813],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3ad17486f8cafec54e799d0bcd6f209b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.302813 -23.733938)<br><b>COD:</b> 588P7M8W+CV<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fee89b5f826a5ad6138d347580a4b4e8 = L.circleMarker(
+                [-23.836063, -45.372563],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_fee89b5f826a5ad6138d347580a4b4e8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.372563 -23.836063)<br><b>COD:</b> 588P5J7G+HX<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_240c3b2c53dab4f6a21ca8a4d5b26f04 = L.circleMarker(
+                [-23.848563, -45.283688],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_240c3b2c53dab4f6a21ca8a4d5b26f04.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.283688 -23.848563)<br><b>COD:</b> 588P5P28+HG<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e0ab75946aca5c5fb0f50bf43c520b6 = L.circleMarker(
+                [-23.903563, -45.245688],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1e0ab75946aca5c5fb0f50bf43c520b6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.245688 -23.903563)<br><b>COD:</b> 588P3QW3+HP<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ebd0e647346564942d68dff23ca90b9b = L.circleMarker(
+                [-23.873188, -45.290063],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ebd0e647346564942d68dff23ca90b9b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.290063 -23.873188)<br><b>COD:</b> 588P4PG5+PX<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75f7464094f79062411cec68235d0193 = L.circleMarker(
+                [-23.909313, -45.340188],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_75f7464094f79062411cec68235d0193.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.340188 -23.909313)<br><b>COD:</b> 588P3MR5+7W<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f97e7e97d955ca21db081ecfd78e5817 = L.circleMarker(
+                [-23.796063, -45.244188],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_f97e7e97d955ca21db081ecfd78e5817.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.244188 -23.796063)<br><b>COD:</b> 588P6Q34+H8<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8609d3531209542580b9bde8fb261ed6 = L.circleMarker(
+                [-23.860438, -45.288813],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8609d3531209542580b9bde8fb261ed6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.288813 -23.860438)<br><b>COD:</b> 588P4PQ6+RF<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb4a73cadfe2e387d0b1ffd6fee3b2bf = L.circleMarker(
+                [-23.796313, -45.243063],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_eb4a73cadfe2e387d0b1ffd6fee3b2bf.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.243063 -23.796313)<br><b>COD:</b> 588P6Q34+FQ<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7470448dbfc66469dadea8dd9abef95c = L.circleMarker(
+                [-23.864688, -45.290813],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7470448dbfc66469dadea8dd9abef95c.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.290813 -23.864688)<br><b>COD:</b> 588P4PP5+4M<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_33fb4d0ec6fbf997c83a61ee45f073b6 = L.circleMarker(
+                [-23.864688, -45.290688],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_33fb4d0ec6fbf997c83a61ee45f073b6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.290688 -23.864688)<br><b>COD:</b> 588P4PP5+4P<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_162b2ef061f7238f83705750bd779e20 = L.circleMarker(
+                [-23.872188, -45.290688],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_162b2ef061f7238f83705750bd779e20.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.290688 -23.872188)<br><b>COD:</b> 588P4PH5+4P<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad1a332b42d402ec29641e22ddc5c61b = L.circleMarker(
+                [-23.832563, -45.245063],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ad1a332b42d402ec29641e22ddc5c61b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.245063 -23.832563)<br><b>COD:</b> 588P5Q83+XX<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af9bf45f4ee26acacbd39cefe75036af = L.circleMarker(
+                [-23.873063, -45.291438],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_af9bf45f4ee26acacbd39cefe75036af.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.291438 -23.873063)<br><b>COD:</b> 588P4PG5+QC<br><b>MUN:</b> Ilhabela<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d3f94c7f94366026b4ce120fa0f9d1ef = L.circleMarker(
+                [-23.7549375, -45.6278125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_d3f94c7f94366026b4ce120fa0f9d1ef.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6278125 -23.7549375)<br><b>COD:</b> 588P69WC+2V<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_656dfd924d3573ec94c5988907e15f83 = L.circleMarker(
+                [-23.7596875, -45.6484375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_656dfd924d3573ec94c5988907e15f83.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6484375 -23.7596875)<br><b>COD:</b> 588P69R2+4J<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bac1f9a8cfb258989a19bac63f40eefa = L.circleMarker(
+                [-23.7248125, -45.4381875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_bac1f9a8cfb258989a19bac63f40eefa.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4381875 -23.7248125)<br><b>COD:</b> 588P7HG6+3P<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c8fd226d6348930b31bb06b3c6826f6 = L.circleMarker(
+                [-23.8298125, -45.5114375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_0c8fd226d6348930b31bb06b3c6826f6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5114375 -23.8298125)<br><b>COD:</b> 588P5FCQ+3C<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aba894675a9746f4f7d817eca98c1d94 = L.circleMarker(
+                [-23.7554375, -45.6280625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_aba894675a9746f4f7d817eca98c1d94.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6280625 -23.7554375)<br><b>COD:</b> 588P69VC+RQ<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c412cf64cd1ad29b8873929cce409b9a = L.circleMarker(
+                [-23.7981875, -45.5431875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c412cf64cd1ad29b8873929cce409b9a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5431875 -23.7981875)<br><b>COD:</b> 588P6F24+PP<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f2a3c15668ec1983ae7af27b2adc530 = L.circleMarker(
+                [-23.7304375, -45.4928125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3f2a3c15668ec1983ae7af27b2adc530.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4928125 -23.7304375)<br><b>COD:</b> 588P7G94+RV<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1773697a240a646794cf8f8d19d1e8e5 = L.circleMarker(
+                [-23.7828125, -45.4045625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1773697a240a646794cf8f8d19d1e8e5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4045625 -23.7828125)<br><b>COD:</b> 588P6H8W+V5<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ca6c7e962b0da1030661eb41bf9d98b = L.circleMarker(
+                [-23.7255625, -45.4346875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7ca6c7e962b0da1030661eb41bf9d98b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4346875 -23.7255625)<br><b>COD:</b> 588P7HF8+Q4<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df07c482738ce6d1694eebdf50f2adf9 = L.circleMarker(
+                [-23.7629375, -45.4109375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_df07c482738ce6d1694eebdf50f2adf9.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4109375 -23.7629375)<br><b>COD:</b> 588P6HPQ+RJ<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e3557090524ddcd2c9a00d2e19e717f8 = L.circleMarker(
+                [-23.7270625, -45.7350625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e3557090524ddcd2c9a00d2e19e717f8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.7350625 -23.7270625)<br><b>COD:</b> 588P77F7+5X<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d8c8c69fc71bf50ddc4e2c0a449cfa06 = L.circleMarker(
+                [-23.7691875, -45.6321875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_d8c8c69fc71bf50ddc4e2c0a449cfa06.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6321875 -23.7691875)<br><b>COD:</b> 588P69J9+84<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f1943c2dfa1170022612b91af8d7ae4 = L.circleMarker(
+                [-23.7408125, -45.8169375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7f1943c2dfa1170022612b91af8d7ae4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.8169375 -23.7408125)<br><b>COD:</b> 588P755M+M6<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_77393e5f28c566e83b2fe0f4c5db3e60 = L.circleMarker(
+                [-23.7586875, -45.4193125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_77393e5f28c566e83b2fe0f4c5db3e60.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4193125 -23.7586875)<br><b>COD:</b> 588P6HRJ+G7<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec42e5b6422015e4553befd301d1ae59 = L.circleMarker(
+                [-23.7340625, -45.4545625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ec42e5b6422015e4553befd301d1ae59.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4545625 -23.7340625)<br><b>COD:</b> 588P7G8W+95<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83cf881cfccad5f51d026ca0d2a067a6 = L.circleMarker(
+                [-23.7923125, -45.5519375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_83cf881cfccad5f51d026ca0d2a067a6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5519375 -23.7923125)<br><b>COD:</b> 588P6C5X+36<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6beba1b4cf3e1816f0514521262613da = L.circleMarker(
+                [-23.7601875, -45.6223125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_6beba1b4cf3e1816f0514521262613da.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6223125 -23.7601875)<br><b>COD:</b> 588P69QH+W3<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_585c07397b8d1b6eecd09455fda077de = L.circleMarker(
+                [-23.8188125, -45.4558125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_585c07397b8d1b6eecd09455fda077de.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4558125 -23.8188125)<br><b>COD:</b> 588P5GJV+FM<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b213748cea96f166e7acef1c2111f129 = L.circleMarker(
+                [-23.7664375, -45.6309375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_b213748cea96f166e7acef1c2111f129.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6309375 -23.7664375)<br><b>COD:</b> 588P69M9+CJ<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_178ea945277b035f9cd0571181f2e101 = L.circleMarker(
+                [-23.8225625, -45.4164375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_178ea945277b035f9cd0571181f2e101.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4164375 -23.8225625)<br><b>COD:</b> 588P5HGM+XC<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87c75f78d7010eadee40cd3c2783ef1b = L.circleMarker(
+                [-23.7696875, -45.5960625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_87c75f78d7010eadee40cd3c2783ef1b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5960625 -23.7696875)<br><b>COD:</b> 588P6CJ3+4H<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c53963cb0a72234c3dd02ca30d8a62a2 = L.circleMarker(
+                [-23.7638125, -45.7579375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c53963cb0a72234c3dd02ca30d8a62a2.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.7579375 -23.7638125)<br><b>COD:</b> 588P66PR+FR<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d81cce5ee919055bf7ad2c0938a03196 = L.circleMarker(
+                [-23.7685625, -45.7238125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_d81cce5ee919055bf7ad2c0938a03196.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.7238125 -23.7685625)<br><b>COD:</b> 588P67JG+HF<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8aa14dd5b2b2c9eff113140d6e39e174 = L.circleMarker(
+                [-23.7893125, -45.6243125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8aa14dd5b2b2c9eff113140d6e39e174.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.6243125 -23.7893125)<br><b>COD:</b> 588P696G+77<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bfad533aba995009803a958fd6c88fbb = L.circleMarker(
+                [-23.7946875, -45.5536875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_bfad533aba995009803a958fd6c88fbb.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5536875 -23.7946875)<br><b>COD:</b> 588P6C4W+4G<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a2fbf56f6f3de5e504188435fdddd740 = L.circleMarker(
+                [-23.8028125, -45.5508125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a2fbf56f6f3de5e504188435fdddd740.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5508125 -23.8028125)<br><b>COD:</b> 588P5CWX+VM<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_290fc61ef49949d8586be3f0775acd4d = L.circleMarker(
+                [-23.8099375, -45.5414375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_290fc61ef49949d8586be3f0775acd4d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5414375 -23.8099375)<br><b>COD:</b> 588P5FR5+2C<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47daf0cc6380d26e7fc3bfec904c92bd = L.circleMarker(
+                [-23.8183125, -45.5330625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_47daf0cc6380d26e7fc3bfec904c92bd.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.5330625 -23.8183125)<br><b>COD:</b> 588P5FJ8+MQ<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_107d443e7eddfa951ee68ca366cd407d = L.circleMarker(
+                [-23.8159375, -45.4083125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_107d443e7eddfa951ee68ca366cd407d.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4083125 -23.8159375)<br><b>COD:</b> 588P5HMR+JM<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af113d13057fd0636903b1efc2fd9029 = L.circleMarker(
+                [-23.7974375, -45.3998125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_af113d13057fd0636903b1efc2fd9029.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.3998125 -23.7974375)<br><b>COD:</b> 588P6J32+23<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6da64b975be58bacd55b1f13348153c0 = L.circleMarker(
+                [-23.7763125, -45.4013125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_6da64b975be58bacd55b1f13348153c0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4013125 -23.7763125)<br><b>COD:</b> 588P6HFX+FF<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86be77d2a435d071f3e084b5df763374 = L.circleMarker(
+                [-23.7595625, -45.4096875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_86be77d2a435d071f3e084b5df763374.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.4096875 -23.7595625)<br><b>COD:</b> 588P6HRR+54<br><b>MUN:</b> São Sebastião<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6ce9e07f6d012ea0be140f08c85a694 = L.circleMarker(
+                [-23.4028125, -45.0628125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a6ce9e07f6d012ea0be140f08c85a694.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0628125 -23.4028125)<br><b>COD:</b> 588PHWWP+VV<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_464710bbd80387bf0924e92c1339b1e8 = L.circleMarker(
+                [-23.3011875, -44.8896875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_464710bbd80387bf0924e92c1339b1e8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8896875 -23.3011875)<br><b>COD:</b> 588QM4X6+G4<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b8ab34f494683243603bad15b12f5d5 = L.circleMarker(
+                [-23.2894375, -44.8666875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_6b8ab34f494683243603bad15b12f5d5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8666875 -23.2894375)<br><b>COD:</b> 588QP46M+68<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_36259a17836afb5a425dbcfe3ea4c130 = L.circleMarker(
+                [-23.3018125, -44.8726875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_36259a17836afb5a425dbcfe3ea4c130.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8726875 -23.3018125)<br><b>COD:</b> 588QM4XG+7W<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b90d1291563941ddb10a6a019b74c75e = L.circleMarker(
+                [-23.5464375, -45.2524375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_b90d1291563941ddb10a6a019b74c75e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2524375 -23.5464375)<br><b>COD:</b> 588PFP3X+C2<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a269c4e97404c0cd06c78edc2c2cbab6 = L.circleMarker(
+                [-23.3014375, -44.8894375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a269c4e97404c0cd06c78edc2c2cbab6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8894375 -23.3014375)<br><b>COD:</b> 588QM4X6+C6<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_363711edc8500acdda050601fe3562b5 = L.circleMarker(
+                [-23.2880625, -44.8675625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_363711edc8500acdda050601fe3562b5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8675625 -23.2880625)<br><b>COD:</b> 588QP46J+QX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_811f6a4ec8734f267e416a41570696c0 = L.circleMarker(
+                [-23.2168125, -44.9366875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_811f6a4ec8734f267e416a41570696c0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.9366875 -23.2168125)<br><b>COD:</b> 588QQ3M7+78<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2147851af680f9b6286dab77d9b40dd4 = L.circleMarker(
+                [-23.4573125, -45.1183125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_2147851af680f9b6286dab77d9b40dd4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1183125 -23.4573125)<br><b>COD:</b> 588PGVVJ+3M<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_467adeda25b2905176fd934b0ab30adf = L.circleMarker(
+                [-23.4794375, -45.1713125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_467adeda25b2905176fd934b0ab30adf.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1713125 -23.4794375)<br><b>COD:</b> 588PGRCH+6F<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45cae959330356eb296ce11b9eea6dd1 = L.circleMarker(
+                [-23.3456875, -44.9586875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_45cae959330356eb296ce11b9eea6dd1.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.9586875 -23.3456875)<br><b>COD:</b> 588QM23R+PG<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be71acca0f41cb1dd967709e2dea5686 = L.circleMarker(
+                [-23.3019375, -44.8886875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_be71acca0f41cb1dd967709e2dea5686.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8886875 -23.3019375)<br><b>COD:</b> 588QM4X6+6G<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d270152e64c724d9fd94e6f1764024b = L.circleMarker(
+                [-23.2911875, -44.8710625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_5d270152e64c724d9fd94e6f1764024b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8710625 -23.2911875)<br><b>COD:</b> 588QP45H+GH<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_acbef15896c623230d5614613095b9db = L.circleMarker(
+                [-23.3073125, -44.8714375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_acbef15896c623230d5614613095b9db.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8714375 -23.3073125)<br><b>COD:</b> 588QM4VH+3C<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6084b4d2f1558ef8f3efc415c59902b4 = L.circleMarker(
+                [-23.4795625, -45.1435625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_6084b4d2f1558ef8f3efc415c59902b4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1435625 -23.4795625)<br><b>COD:</b> 588PGVC4+5H<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9bb81429d6a29585286a58332b05d031 = L.circleMarker(
+                [-23.4246875, -45.0920625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_9bb81429d6a29585286a58332b05d031.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0920625 -23.4246875)<br><b>COD:</b> 588PHWG5+45<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a30d0641080faddf773a175d08f1fb44 = L.circleMarker(
+                [-23.5600625, -45.2549375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a30d0641080faddf773a175d08f1fb44.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2549375 -23.5600625)<br><b>COD:</b> 588PCPQW+X2<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1c6e0044878a89852c0cc4b9b9e7a5b = L.circleMarker(
+                [-23.4401875, -45.1050625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c1c6e0044878a89852c0cc4b9b9e7a5b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1050625 -23.4401875)<br><b>COD:</b> 588PHV5V+WX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7dd3de4fee28e1de5544bdfdc661f2e4 = L.circleMarker(
+                [-23.3213125, -44.8855625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_7dd3de4fee28e1de5544bdfdc661f2e4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8855625 -23.3213125)<br><b>COD:</b> 588QM4H7+FQ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_782f35c2848af5aa8c3619944094df04 = L.circleMarker(
+                [-23.2974375, -44.8694375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_782f35c2848af5aa8c3619944094df04.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8694375 -23.2974375)<br><b>COD:</b> 588QP43J+26<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44778a2a2641fd60adf682411400edcf = L.circleMarker(
+                [-23.3969375, -45.0786875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_44778a2a2641fd60adf682411400edcf.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0786875 -23.3969375)<br><b>COD:</b> 588PJW3C+6G<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9369554b48510f9516f774af981cd356 = L.circleMarker(
+                [-23.4839375, -45.1698125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_9369554b48510f9516f774af981cd356.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1698125 -23.4839375)<br><b>COD:</b> 588PGR8J+C3<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_73d4d5eb00b0da70521f476ae15ddf16 = L.circleMarker(
+                [-23.4376875, -45.1110625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_73d4d5eb00b0da70521f476ae15ddf16.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1110625 -23.4376875)<br><b>COD:</b> 588PHV6Q+WH<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b1ab1fad90fbf585157441263a3c572 = L.circleMarker(
+                [-23.4030625, -45.0565625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1b1ab1fad90fbf585157441263a3c572.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0565625 -23.4030625)<br><b>COD:</b> 588PHWWV+Q9<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fcf11431a3d13a150149de0a40204c6c = L.circleMarker(
+                [-23.4838125, -45.1536875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_fcf11431a3d13a150149de0a40204c6c.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1536875 -23.4838125)<br><b>COD:</b> 588PGR8W+FG<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_395c236fe718a29a959bee786445c99b = L.circleMarker(
+                [-23.4234375, -45.1125625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_395c236fe718a29a959bee786445c99b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1125625 -23.4234375)<br><b>COD:</b> 588PHVGP+JX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1eea1e8af4e068dc14156a77ba62a0ed = L.circleMarker(
+                [-23.3064375, -44.8793125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1eea1e8af4e068dc14156a77ba62a0ed.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8793125 -23.3064375)<br><b>COD:</b> 588QM4VC+C7<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5697c5be3c7d954b80e8547d1606bed7 = L.circleMarker(
+                [-23.3075625, -44.8741875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_5697c5be3c7d954b80e8547d1606bed7.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8741875 -23.3075625)<br><b>COD:</b> 588QM4RG+X8<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fdbd79ad57b1f0401d525b912fc9fb5a = L.circleMarker(
+                [-23.3351875, -44.8788125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_fdbd79ad57b1f0401d525b912fc9fb5a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8788125 -23.3351875)<br><b>COD:</b> 588QM47C+WF<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81b5132db19cb4be5833ef1c37e44d26 = L.circleMarker(
+                [-23.3051875, -44.8859375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_81b5132db19cb4be5833ef1c37e44d26.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8859375 -23.3051875)<br><b>COD:</b> 588QM4V7+WJ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01c08b0f8d954031151150bbe0dfbfe9 = L.circleMarker(
+                [-23.2931875, -44.8558125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_01c08b0f8d954031151150bbe0dfbfe9.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8558125 -23.2931875)<br><b>COD:</b> 588QP44V+PM<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed261359a724a0c750dc0a78e085b985 = L.circleMarker(
+                [-23.4500625, -45.0825625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ed261359a724a0c750dc0a78e085b985.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0825625 -23.4500625)<br><b>COD:</b> 588PGWX8+XX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4140cb2c5d9860475baf6c7196fbf2e9 = L.circleMarker(
+                [-23.3685625, -44.7855625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4140cb2c5d9860475baf6c7196fbf2e9.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.7855625 -23.3685625)<br><b>COD:</b> 588QJ6J7+HQ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_306a7545b4b944e9174e0b51c5a9be20 = L.circleMarker(
+                [-23.3416875, -44.8394375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_306a7545b4b944e9174e0b51c5a9be20.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8394375 -23.3416875)<br><b>COD:</b> 588QM556+86<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c70928098948ae900e4b6633e8e04794 = L.circleMarker(
+                [-23.4415625, -45.1199375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c70928098948ae900e4b6633e8e04794.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1199375 -23.4415625)<br><b>COD:</b> 588PHV5J+92<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6ae3b6e260a36b0593d60874b4be82b = L.circleMarker(
+                [-23.3075625, -44.8586875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a6ae3b6e260a36b0593d60874b4be82b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8586875 -23.3075625)<br><b>COD:</b> 588QM4RR+XG<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_957e20126e7b7cff94c4088abcb9b404 = L.circleMarker(
+                [-23.3943125, -45.0815625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_957e20126e7b7cff94c4088abcb9b404.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0815625 -23.3943125)<br><b>COD:</b> 588PJW49+79<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d27995f8a49ae28dcee48082fcacd3ed = L.circleMarker(
+                [-23.4014375, -45.0630625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_d27995f8a49ae28dcee48082fcacd3ed.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0630625 -23.4014375)<br><b>COD:</b> 588PHWXP+CQ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8eb0c0645fdeefd01cd6ed17f15a6b24 = L.circleMarker(
+                [-23.3461875, -44.9579375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8eb0c0645fdeefd01cd6ed17f15a6b24.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.9579375 -23.3461875)<br><b>COD:</b> 588QM23R+GR<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_12dd0d45b72f7a2db1ebc194a88547b8 = L.circleMarker(
+                [-23.3046875, -44.8625625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_12dd0d45b72f7a2db1ebc194a88547b8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8625625 -23.3046875)<br><b>COD:</b> 588QM4WP+4X<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e61ca8c218fe3581e5920507262e6c4 = L.circleMarker(
+                [-23.4763125, -45.1756875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4e61ca8c218fe3581e5920507262e6c4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1756875 -23.4763125)<br><b>COD:</b> 588PGRFF+FP<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_448a8cadeb4a0672aafb1c27f8e91842 = L.circleMarker(
+                [-23.3484375, -44.8680625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_448a8cadeb4a0672aafb1c27f8e91842.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8680625 -23.3484375)<br><b>COD:</b> 588QM42J+JQ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6aafe2a735f25c50b764653bec96eb03 = L.circleMarker(
+                [-23.5391875, -45.2576875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_6aafe2a735f25c50b764653bec96eb03.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2576875 -23.5391875)<br><b>COD:</b> 588PFP6R+8W<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e7136ad6bf41566f259580fddb459e6 = L.circleMarker(
+                [-23.2944375, -44.8578125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3e7136ad6bf41566f259580fddb459e6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8578125 -23.2944375)<br><b>COD:</b> 588QP44R+6V<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5580f25f58a2167df61aa81b8c979ec8 = L.circleMarker(
+                [-23.5584375, -45.2525625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_5580f25f58a2167df61aa81b8c979ec8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2525625 -23.5584375)<br><b>COD:</b> 588PCPRW+JX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b916d1bae8b32316c297529f272c0796 = L.circleMarker(
+                [-23.2986875, -44.8915625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_b916d1bae8b32316c297529f272c0796.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8915625 -23.2986875)<br><b>COD:</b> 588QP425+G9<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65831dc981d2b8ecf9b02e237fcfaba5 = L.circleMarker(
+                [-23.4566875, -45.1154375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_65831dc981d2b8ecf9b02e237fcfaba5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1154375 -23.4566875)<br><b>COD:</b> 588PGVVM+8R<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8969d099e0b06b4c1218bd5b0e8ee4e1 = L.circleMarker(
+                [-23.2814375, -44.8606875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8969d099e0b06b4c1218bd5b0e8ee4e1.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8606875 -23.2814375)<br><b>COD:</b> 588QP49Q+CP<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f6890d1cb9e2427901a9521809a6ab85 = L.circleMarker(
+                [-23.3118125, -44.8788125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_f6890d1cb9e2427901a9521809a6ab85.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8788125 -23.3118125)<br><b>COD:</b> 588QM4QC+7F<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c9bc86fa7a4e1fad0a3b77debfe97732 = L.circleMarker(
+                [-23.2960625, -44.8600625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c9bc86fa7a4e1fad0a3b77debfe97732.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8600625 -23.2960625)<br><b>COD:</b> 588QP43Q+HX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_276ac3e26c164ecbe8e3cd182a73d3b3 = L.circleMarker(
+                [-23.3979375, -45.0404375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_276ac3e26c164ecbe8e3cd182a73d3b3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0404375 -23.3979375)<br><b>COD:</b> 588PJX25+RR<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1919d18fd23a8dd3b2f8dda0c10c9b67 = L.circleMarker(
+                [-23.3970625, -45.0539375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1919d18fd23a8dd3b2f8dda0c10c9b67.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0539375 -23.3970625)<br><b>COD:</b> 588PJW3W+5C<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6dc4393dc0697a0a5ec037007edea11 = L.circleMarker(
+                [-23.4436875, -45.0846875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a6dc4393dc0697a0a5ec037007edea11.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0846875 -23.4436875)<br><b>COD:</b> 588PHW48+G4<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a825d4f372f98d50ac44e4129b74845 = L.circleMarker(
+                [-23.2998125, -44.8798125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8a825d4f372f98d50ac44e4129b74845.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8798125 -23.2998125)<br><b>COD:</b> 588QP42C+33<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c28edcd53b66f8bfc0c89e48e1dac59 = L.circleMarker(
+                [-23.4055625, -45.1180625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1c28edcd53b66f8bfc0c89e48e1dac59.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1180625 -23.4055625)<br><b>COD:</b> 588PHVVJ+QQ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e179ebfcc166df607afff53b66b4fc9b = L.circleMarker(
+                [-23.5610625, -45.2564375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e179ebfcc166df607afff53b66b4fc9b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2564375 -23.5610625)<br><b>COD:</b> 588PCPQV+HC<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5eb021790a866b88cdee6c9b416d5c71 = L.circleMarker(
+                [-23.4256875, -45.1050625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_5eb021790a866b88cdee6c9b416d5c71.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1050625 -23.4256875)<br><b>COD:</b> 588PHVFV+PX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02581b6fcb346cf438ba82dfbab5de12 = L.circleMarker(
+                [-23.3029375, -44.8770625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_02581b6fcb346cf438ba82dfbab5de12.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8770625 -23.3029375)<br><b>COD:</b> 588QM4WF+R5<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d08ca297a2f7a7798482202c140c505 = L.circleMarker(
+                [-23.3055625, -44.8558125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4d08ca297a2f7a7798482202c140c505.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8558125 -23.3055625)<br><b>COD:</b> 588QM4VV+QM<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74bd9068b353dcd4fec1a894c0af156f = L.circleMarker(
+                [-23.3571875, -44.7693125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_74bd9068b353dcd4fec1a894c0af156f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.7693125 -23.3571875)<br><b>COD:</b> 588QJ6VJ+47<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87d4cea5c4b9b866f87954d8ee3e68ca = L.circleMarker(
+                [-23.5614375, -45.2564375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_87d4cea5c4b9b866f87954d8ee3e68ca.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2564375 -23.5614375)<br><b>COD:</b> 588PCPQV+CC<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1982f5bda8e57a90fc13a55fcebbb2b0 = L.circleMarker(
+                [-23.2848125, -44.8489375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1982f5bda8e57a90fc13a55fcebbb2b0.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8489375 -23.2848125)<br><b>COD:</b> 588QP582+3C<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cb4601317094fd04347072bb3f3f2ff = L.circleMarker(
+                [-23.3704375, -44.7773125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1cb4601317094fd04347072bb3f3f2ff.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.7773125 -23.3704375)<br><b>COD:</b> 588QJ6HF+R3<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8896f100d4cce8aaaf098eafdf8a13ca = L.circleMarker(
+                [-23.2968125, -44.8670625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8896f100d4cce8aaaf098eafdf8a13ca.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8670625 -23.2968125)<br><b>COD:</b> 588QP43M+75<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c775c57697a0e2d9ee8df136c0358e8b = L.circleMarker(
+                [-23.3044375, -44.8855625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c775c57697a0e2d9ee8df136c0358e8b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8855625 -23.3044375)<br><b>COD:</b> 588QM4W7+6Q<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80a1ab5d8d1df68708a404036f0ee51b = L.circleMarker(
+                [-23.3409375, -44.8401875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_80a1ab5d8d1df68708a404036f0ee51b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8401875 -23.3409375)<br><b>COD:</b> 588QM555+JW<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_caa619287e52326b7e03a1ee7adf1096 = L.circleMarker(
+                [-23.3041875, -44.8709375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_caa619287e52326b7e03a1ee7adf1096.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8709375 -23.3041875)<br><b>COD:</b> 588QM4WH+8J<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efff6c04729da3dc7b9409dcd02c3cfe = L.circleMarker(
+                [-23.3006875, -44.8900625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_efff6c04729da3dc7b9409dcd02c3cfe.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8900625 -23.3006875)<br><b>COD:</b> 588QM4X5+PX<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_746ce212497c0b7a51bab5c46a171877 = L.circleMarker(
+                [-23.2996875, -44.8819375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_746ce212497c0b7a51bab5c46a171877.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8819375 -23.2996875)<br><b>COD:</b> 588QP429+46<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_25b12de89aea046838f8ab9025a2a62f = L.circleMarker(
+                [-23.3055625, -44.8551875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_25b12de89aea046838f8ab9025a2a62f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8551875 -23.3055625)<br><b>COD:</b> 588QM4VV+QW<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d6e8e0801003725b967383d2278ccae = L.circleMarker(
+                [-23.4468125, -45.0938125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1d6e8e0801003725b967383d2278ccae.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0938125 -23.4468125)<br><b>COD:</b> 588PHW34+7F<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae2c96068cb5b9ac35dec4b99b86f82b = L.circleMarker(
+                [-23.4766875, -45.1425625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ae2c96068cb5b9ac35dec4b99b86f82b.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1425625 -23.4766875)<br><b>COD:</b> 588PGVF4+8X<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef65f8c8d1d2a2296c84fbb2939a374f = L.circleMarker(
+                [-23.5406875, -45.2396875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_ef65f8c8d1d2a2296c84fbb2939a374f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.2396875 -23.5406875)<br><b>COD:</b> 588PFQ56+P4<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_759ab286b4145894c48eddfd8aee8e99 = L.circleMarker(
+                [-23.4836875, -45.1834375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_759ab286b4145894c48eddfd8aee8e99.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1834375 -23.4836875)<br><b>COD:</b> 588PGR88+GJ<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_387bcd953d438293ce40320e8dd0644f = L.circleMarker(
+                [-23.3051875, -44.8685625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_387bcd953d438293ce40320e8dd0644f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8685625 -23.3051875)<br><b>COD:</b> 588QM4VJ+WH<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68d6764975dc6393a9efcc865b0e78e4 = L.circleMarker(
+                [-23.2966875, -44.8694375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_68d6764975dc6393a9efcc865b0e78e4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8694375 -23.2966875)<br><b>COD:</b> 588QP43J+86<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e51452e2321b6d7eaa34d4bf6ba0992f = L.circleMarker(
+                [-23.3054375, -44.8535625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e51452e2321b6d7eaa34d4bf6ba0992f.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8535625 -23.3054375)<br><b>COD:</b> 588QM4VW+RH<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59526601062e089900513d2342e29041 = L.circleMarker(
+                [-23.4755625, -45.1745625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_59526601062e089900513d2342e29041.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1745625 -23.4755625)<br><b>COD:</b> 588PGRFG+Q5<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c3ae3201e4b98c52a3ac19c44b1c2fc6 = L.circleMarker(
+                [-23.2973125, -44.8618125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c3ae3201e4b98c52a3ac19c44b1c2fc6.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8618125 -23.2973125)<br><b>COD:</b> 588QP43Q+37<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81922203368ca0b1119bcf914db1a4ab = L.circleMarker(
+                [-23.4843125, -45.1455625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_81922203368ca0b1119bcf914db1a4ab.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1455625 -23.4843125)<br><b>COD:</b> 588PGV83+7Q<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8aec57e509e55d00a5300badce48479 = L.circleMarker(
+                [-23.3008125, -44.8715625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_c8aec57e509e55d00a5300badce48479.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8715625 -23.3008125)<br><b>COD:</b> 588QM4XH+M9<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_366bfb0729bcece33acf8396474c09d3 = L.circleMarker(
+                [-23.2951875, -44.8540625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_366bfb0729bcece33acf8396474c09d3.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8540625 -23.2951875)<br><b>COD:</b> 588QP43W+W9<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a2b2ac463df7a06bd023c7bacdeaaa4a = L.circleMarker(
+                [-23.3159375, -44.8839375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_a2b2ac463df7a06bd023c7bacdeaaa4a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8839375 -23.3159375)<br><b>COD:</b> 588QM4M8+JC<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45f33362e005ae4c8755a9379800f2d4 = L.circleMarker(
+                [-23.3066875, -44.8806875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_45f33362e005ae4c8755a9379800f2d4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8806875 -23.3066875)<br><b>COD:</b> 588QM4V9+8P<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_32f01db6993344cc683c3516dcaba572 = L.circleMarker(
+                [-23.2974375, -44.8695625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_32f01db6993344cc683c3516dcaba572.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8695625 -23.2974375)<br><b>COD:</b> 588QP43J+25<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1545160089a9536ddc46b191aed634f5 = L.circleMarker(
+                [-23.3293125, -44.8830625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1545160089a9536ddc46b191aed634f5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8830625 -23.3293125)<br><b>COD:</b> 588QM4C8+7Q<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c5e9126775bfcce6c524c66f49d4689 = L.circleMarker(
+                [-23.2945625, -44.8694375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4c5e9126775bfcce6c524c66f49d4689.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8694375 -23.2945625)<br><b>COD:</b> 588QP44J+56<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_747b738fb2d8613b5e2ff76c627647ce = L.circleMarker(
+                [-23.3035625, -44.8743125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_747b738fb2d8613b5e2ff76c627647ce.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8743125 -23.3035625)<br><b>COD:</b> 588QM4WG+H7<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_519c0ccf8a6b79388edc85948ec7b381 = L.circleMarker(
+                [-23.4443125, -45.1068125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_519c0ccf8a6b79388edc85948ec7b381.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1068125 -23.4443125)<br><b>COD:</b> 588PHV4V+77<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efa035390dc83ed222cb35380f5ff197 = L.circleMarker(
+                [-23.3085625, -44.8699375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_efa035390dc83ed222cb35380f5ff197.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8699375 -23.3085625)<br><b>COD:</b> 588QM4RJ+H2<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8fef438f0e93331b16ee1336b7ba743e = L.circleMarker(
+                [-23.4404375, -45.1049375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8fef438f0e93331b16ee1336b7ba743e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1049375 -23.4404375)<br><b>COD:</b> 588PHV5W+R2<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c35e04b8bc01fea30e065a6cfdeabb4 = L.circleMarker(
+                [-23.3966875, -45.0548125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_3c35e04b8bc01fea30e065a6cfdeabb4.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0548125 -23.3966875)<br><b>COD:</b> 588PJW3W+83<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_195fa913c446b7009d8e71f2dd1fa600 = L.circleMarker(
+                [-23.2934375, -44.8845625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_195fa913c446b7009d8e71f2dd1fa600.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8845625 -23.2934375)<br><b>COD:</b> 588QP448+J5<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72c25deb583ad3b393abc03eca299070 = L.circleMarker(
+                [-23.3861875, -45.0256875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_72c25deb583ad3b393abc03eca299070.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0256875 -23.3861875)<br><b>COD:</b> 588PJX7F+GP<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c0faa42c3a8ffb7b325fab9084cefe5 = L.circleMarker(
+                [-23.4638125, -45.1341875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_0c0faa42c3a8ffb7b325fab9084cefe5.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.1341875 -23.4638125)<br><b>COD:</b> 588PGVP8+F8<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1083430e3b6be8a240c44e0acfa4bdff = L.circleMarker(
+                [-23.3020625, -44.8883125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_1083430e3b6be8a240c44e0acfa4bdff.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8883125 -23.3020625)<br><b>COD:</b> 588QM4X6+5M<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e3880ff7da5276dafd37679311f4437 = L.circleMarker(
+                [-23.3006875, -44.8778125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_4e3880ff7da5276dafd37679311f4437.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8778125 -23.3006875)<br><b>COD:</b> 588QM4XC+PV<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10d4343cfb097f09efa7190d08d75442 = L.circleMarker(
+                [-23.3981875, -45.0753125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_10d4343cfb097f09efa7190d08d75442.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-45.0753125 -23.3981875)<br><b>COD:</b> 588PJW2F+PV<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f40e96a89ddb25d9f94de4df95beb4e = L.circleMarker(
+                [-23.2998125, -44.8709375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_8f40e96a89ddb25d9f94de4df95beb4e.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8709375 -23.2998125)<br><b>COD:</b> 588QP42H+3J<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e51e7f76ddab5bce67126e3d4fe7fbe8 = L.circleMarker(
+                [-23.3580625, -44.7691875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_e51e7f76ddab5bce67126e3d4fe7fbe8.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.7691875 -23.3580625)<br><b>COD:</b> 588QJ6RJ+Q8<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2a32ad243dc667fb41af4bd349e65377 = L.circleMarker(
+                [-23.3028125, -44.8685625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_2a32ad243dc667fb41af4bd349e65377.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8685625 -23.3028125)<br><b>COD:</b> 588QM4WJ+VH<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bab700ec06acca86ee886066d6469b35 = L.circleMarker(
+                [-23.3003125, -44.8906875],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_bab700ec06acca86ee886066d6469b35.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8906875 -23.3003125)<br><b>COD:</b> 588QM4X5+VP<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_faa6efbcf08c27fa52644d14a8dc022a = L.circleMarker(
+                [-23.3013125, -44.8720625],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_722da2847e2285130a71d0f824258ac1);
+        
+    
+            circle_marker_faa6efbcf08c27fa52644d14a8dc022a.bindTooltip(
+                `<div>
+                     <b>Lat/Long:</b> MULTIPOINT (-44.8720625 -23.3013125)<br><b>COD:</b> 588QM4XH+F5<br><b>MUN:</b> Ubatuba<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
