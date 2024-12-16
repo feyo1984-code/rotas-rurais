@@ -3,6 +3,9 @@
 
 Este repositório contém mapas interativos que mostram as **Rotas Rurais** nos municípios operados pela **Sabesp** no interior de São Paulo.
 
+O programa Rotas Rurais busca solucionar a falta de endereços oficiais no ambiente rural por meio de uma plataforma inovadora que combina tecnologia avançada, informações geográficas e geolocalização, permitindo que cada propriedade rural seja facilmente localizada. Com foco na inclusão digital e na melhoria da logística, o programa reúne dados em uma única plataforma de acesso remoto, promovendo conectividade e integração das áreas rurais ao mundo digital. Neste projeto, os mapas foram recortados especificamente para os municípios operados pela Sabesp, no interior do estado de São Paulo, demonstrando o potencial do programa em transformar o acesso e a organização do território rural, conectando propriedades a serviços e às necessidades da população.
+
+
 ## 🔍 Acesse os Mapas
 
 Os mapas estão disponíveis online e podem ser acessados pelos links abaixo:
