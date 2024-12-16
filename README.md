@@ -50,4 +50,4 @@ Se você quiser executar os mapas localmente:
 
 ---
 
-Desenvolvido por [Seu Nome].
+Desenvolvido por [Fernando Yogi] da Superintendência de Pesquisa, Desenvolvimento Tecnológico e Inovação. Departamento de Execução de Projetos de Pesquisa, Desenvolvimento e Inovação.
