@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotas Rurais e Mapas de Kernel</title>
+    <title>Rotas Rurais nos Municípios Operados Pela Sabesp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f9;
-        }
-        h1 {
+            line-height: 1.6;
             margin: 20px;
+            background-color: #f4f4f9;
             color: #333;
+        }
+        h1, h2, h3 {
+            color: #007BFF;
         }
         ul {
             list-style: none;
@@ -24,16 +23,24 @@
             margin: 10px 0;
         }
         a {
-            text-decoration: none;
             color: #007BFF;
-            font-size: 18px;
+            text-decoration: none;
         }
         a:hover {
-            color: #0056b3;
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
+    <h1>Rotas Rurais nos Municípios Operados Pela Sabesp</h1>
+    <p>Este repositório contém mapas interativos que mostram as <strong>Rotas Rurais</strong> nos municípios operados pela <strong>Sabesp</strong> no interior de São Paulo.</p>
+
+    <p>O programa Rotas Rurais busca solucionar a falta de endereços oficiais no ambiente rural por meio de uma plataforma inovadora que combina tecnologia avançada, informações geográficas e geolocalização, permitindo que cada propriedade rural seja facilmente localizada. Com foco na inclusão digital e na melhoria da logística, o programa reúne dados em uma única plataforma de acesso remoto, promovendo conectividade e integração das áreas rurais ao mundo digital. Neste projeto, os mapas foram recortados especificamente para os municípios operados pela Sabesp, no interior do estado de São Paulo, demonstrando o potencial do programa em transformar o acesso e a organização do território rural, conectando propriedades a serviços e às necessidades da população.</p>
     <h1>Mapas de Rotas Rurais e Kernel nos Municípios Operados Pela Sabesp</h1>
     <p>Utilizando as coordenadas do Programa Rotas Rurais, foram criados mapas de Kernel para visualizar a densidade de pontos em cada área rural. Os mapas de Kernel, ilustrados por Superintendências, utilizam uma paleta de cores que varia de frias a quentes para indicar áreas de menor a maior densidade de edificações.</p>
     
@@ -66,6 +73,38 @@
         <li><a href="Kernel_Rotas_Rurais_RR.html">Mapa Kernel RR</a></li>
         <li><a href="Kernel_Rotas_Rurais_RS.html">Mapa Kernel RS</a></li>
     </ul>
+ <h2>📂 Estrutura do Repositório</h2>
+    <p>O repositório contém os seguintes arquivos:</p>
+    <ul>
+        <li><strong>index.html</strong>: Página inicial com links para os mapas.</li>
+        <li><strong>Rotas_Rurais_*.html</strong>: Arquivos HTML individuais para cada grupo de rotas rurais.</li>
+        <li><strong>README.md</strong>: Documentação do projeto (este arquivo).</li>
+    </ul>
+
+    <h2>🗺️ Sobre os Mapas</h2>
+    <p>Cada mapa mostra as <strong>rotas rurais</strong> para diferentes grupos de municípios, organizados por regiões:</p>
+    <ul>
+        <li>RA, RB, RG, RM, RV, RT, RJ, RN, RR, RS.</li>
+    </ul>
+    <p>Os mapas foram gerados com a biblioteca <strong>Folium</strong> e são totalmente interativos.</p>
+
+    <h2>📦 Como Publicar Localmente</h2>
+    <p>Se você quiser executar os mapas localmente:</p>
+    <ol>
+        <li>Faça o download dos arquivos HTML.</li>
+        <li>Abra os arquivos no navegador.</li>
+    </ol>
+
+    <h2>🛠️ Tecnologias Utilizadas</h2>
+    <ul>
+        <li><a href="https://python-visualization.github.io/folium/">Folium</a>: Biblioteca Python para mapas interativos.</li>
+        <li>GitHub Pages: Hospedagem gratuita para os mapas.</li>
+    </ul>
+
+    <div class="footer">
+        <p>Desenvolvido por <strong>Fernando Yogi</strong> da Superintendência de Pesquisa, Desenvolvimento Tecnológico e Inovação. Departamento de Execução de Projetos de Pesquisa, Desenvolvimento e Inovação.</p>
+    </div>
 </body>
+
 </html>
 
