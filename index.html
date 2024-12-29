@@ -1,16 +1,9 @@
-import os
-
-# Criar pasta para os arquivos
-os.makedirs("rotas-rurais", exist_ok=True)
-
-# Conteúdo do index.html atualizado
-index_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotas Rurais - Mapas de Kernel</title>
+    <title>Rotas Rurais e Mapas de Kernel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,11 +15,6 @@ index_content = """
         h1 {
             margin: 20px;
             color: #333;
-        }
-        p {
-            font-size: 16px;
-            margin: 20px;
-            color: #555;
         }
         ul {
             list-style: none;
@@ -46,36 +34,38 @@ index_content = """
     </style>
 </head>
 <body>
-    <h1>Rotas Rurais - Mapas de Kernel</h1>
-    <p>
-        Utilizando as coordenadas do Programa Rotas Rurais, foram criados mapas de Kernel para visualizar a densidade de pontos em cada área rural. 
-        Os mapas de Kernel, ilustrados por Superintendências, utilizam uma paleta de cores que varia de frias a quentes para indicar áreas de menor a maior densidade de edificações.
-    </p>
-    <p>Selecione um mapa para visualizar:</p>
+    <h1>Mapas de Rotas Rurais e Kernel nos Municípios Operados Pela Sabesp</h1>
+    <p>Utilizando as coordenadas do Programa Rotas Rurais, foram criados mapas de Kernel para visualizar a densidade de pontos em cada área rural. Os mapas de Kernel, ilustrados por Superintendências, utilizam uma paleta de cores que varia de frias a quentes para indicar áreas de menor a maior densidade de edificações.</p>
+    
+    <h2>Mapas de Rotas Rurais</h2>
+    <p>Acesse os mapas de Rotas Rurais para visualização das rotas em diferentes regiões:</p>
     <ul>
-        <li><a href="Rotas_Rurais_RA.html">Mapa RA - Superintendência RA</a></li>
-        <li><a href="Rotas_Rurais_RB.html">Mapa RB - Superintendência RB</a></li>
-        <li><a href="Rotas_Rurais_RG.html">Mapa RG - Superintendência RG</a></li>
-        <li><a href="Rotas_Rurais_RM.html">Mapa RM - Superintendência RM</a></li>
-        <li><a href="Rotas_Rurais_RV.html">Mapa RV - Superintendência RV</a></li>
-        <li><a href="Rotas_Rurais_RT.html">Mapa RT - Superintendência RT</a></li>
-        <li><a href="Rotas_Rurais_RJ.html">Mapa RJ - Superintendência RJ</a></li>
-        <li><a href="Rotas_Rurais_RN.html">Mapa RN - Superintendência RN</a></li>
-        <li><a href="Rotas_Rurais_RR.html">Mapa RR - Superintendência RR</a></li>
-        <li><a href="Rotas_Rurais_RS.html">Mapa RS - Superintendência RS</a></li>
+        <li><a href="Rotas_Rurais_RA.html">Mapa RA</a></li>
+        <li><a href="Rotas_Rurais_RB.html">Mapa RB</a></li>
+        <li><a href="Rotas_Rurais_RG.html">Mapa RG</a></li>
+        <li><a href="Rotas_Rurais_RM.html">Mapa RM</a></li>
+        <li><a href="Rotas_Rurais_RV.html">Mapa RV</a></li>
+        <li><a href="Rotas_Rurais_RT.html">Mapa RT</a></li>
+        <li><a href="Rotas_Rurais_RJ.html">Mapa RJ</a></li>
+        <li><a href="Rotas_Rurais_RN.html">Mapa RN</a></li>
+        <li><a href="Rotas_Rurais_RR.html">Mapa RR</a></li>
+        <li><a href="Rotas_Rurais_RS.html">Mapa RS</a></li>
+    </ul>
+
+    <h2>Mapas de Kernel</h2>
+    <p>Acesse os mapas de Kernel, que mostram a densidade de pontos de interesse em cada região rural:</p>
+    <ul>
+        <li><a href="Kernel_RA.html">Mapa Kernel RA</a></li>
+        <li><a href="Kernel_RB.html">Mapa Kernel RB</a></li>
+        <li><a href="Kernel_RG.html">Mapa Kernel RG</a></li>
+        <li><a href="Kernel_RM.html">Mapa Kernel RM</a></li>
+        <li><a href="Kernel_RV.html">Mapa Kernel RV</a></li>
+        <li><a href="Kernel_RT.html">Mapa Kernel RT</a></li>
+        <li><a href="Kernel_RJ.html">Mapa Kernel RJ</a></li>
+        <li><a href="Kernel_RN.html">Mapa Kernel RN</a></li>
+        <li><a href="Kernel_RR.html">Mapa Kernel RR</a></li>
+        <li><a href="Kernel_RS.html">Mapa Kernel RS</a></li>
     </ul>
 </body>
 </html>
-"""
 
-# Criar o index.html
-with open("rotas-rurais/index.html", "w") as f:
-    f.write(index_content)
-
-# Simulação dos arquivos HTML dos mapas
-map_names = ["RA", "RB", "RG", "RM", "RV", "RT", "RJ", "RN", "RR", "RS"]
-for name in map_names:
-    with open(f"rotas-rurais/Rotas_Rurais_{name}.html", "w") as f:
-        f.write(f"<!-- Simulação do mapa {name} -->")
-
-print("Estrutura criada. Pronta para upload no GitHub!")
