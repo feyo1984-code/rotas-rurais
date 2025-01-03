@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotas Rurais nos Municípios Operados Pela Sabesp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #007BFF;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rotas Rurais nos Municípios Operados Pela Sabesp</h1>
+    <p>Este repositório contém mapas interativos que mostram as <strong>Rotas Rurais</strong> nos municípios operados pela <strong>Sabesp</strong> no interior de São Paulo.</p>
+
+    <p>O programa Rotas Rurais busca solucionar a falta de endereços oficiais no ambiente rural por meio de uma plataforma inovadora que combina tecnologia avançada, informações geográficas e geolocalização, permitindo que cada propriedade rural seja facilmente localizada. Com foco na inclusão digital e na melhoria da logística, o programa reúne dados em uma única plataforma de acesso remoto, promovendo conectividade e integração das áreas rurais ao mundo digital. Neste projeto, os mapas foram recortados especificamente para os municípios operados pela Sabesp, no interior do estado de São Paulo, demonstrando o potencial do programa em transformar o acesso e a organização do território rural, conectando propriedades a serviços e às necessidades da população.</p>
+
+    <h2>🔍 Acesse os Mapas</h2>
+    <ul>
+        <li><a href="Rotas_Rurais_RA.html">Mapa RA</a></li>
+        <li><a href="Rotas_Rurais_RB.html">Mapa RB</a></li>
+        <li><a href="Rotas_Rurais_RG.html">Mapa RG</a></li>
+        <li><a href="Rotas_Rurais_RM.html">Mapa RM</a></li>
+        <li><a href="Rotas_Rurais_RV.html">Mapa RV</a></li>
+        <li><a href="Rotas_Rurais_RT.html">Mapa RT</a></li>
+        <li><a href="Rotas_Rurais_RJ.html">Mapa RJ</a></li>
+        <li><a href="Rotas_Rurais_RN.html">Mapa RN</a></li>
+        <li><a href="Rotas_Rurais_RR.html">Mapa RR</a></li>
+        <li><a href="Rotas_Rurais_RS.html">Mapa RS</a></li>
+    </ul>
+<h2>Mapas de Kernel</h2>
+    <p>Utilizando as coordenadas do Programa Rotas Rurais, foram criadas mapas de Kernel para visualizar a densidade de pontos em cada área rural. Os mapas de Kernel, ilustrados por Superintendência e Municípios atendidos pela Sabesp, as cores variam em uma palete de cores "Spectral" de frias a quentes para indicar áreas de menor a maior densidade de edificações rurais.Acesse os mapas de Kernel, que mostram a densidade de pontos de interesse em cada região rural:</p>
+    <ul>
+        <li><a href="Kernel_Rotas_Rurais_RA.html">Mapa Kernel RA</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RB.html">Mapa Kernel RB</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RG.html">Mapa Kernel RG</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RM.html">Mapa Kernel RM</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RV.html">Mapa Kernel RV</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RT.html">Mapa Kernel RT</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RJ.html">Mapa Kernel RJ</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RN.html">Mapa Kernel RN</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RR.html">Mapa Kernel RR</a></li>
+        <li><a href="Kernel_Rotas_Rurais_RS.html">Mapa Kernel RS</a></li>
+    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas de Kernel - Municípios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: #e0e7ff;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .grid-item a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .grid-item a:hover {
+            text-decoration: underline;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+            background-color: #d1d9ff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mapas de Kernel - Municípios</h2>
+    <div class="grid-container">
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_serra_negra.html">Serra Negra</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guariba.html">Guariba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa rosa viterbo.html">Santa Rosa Viterbo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_espirito santo pinhal.html">Espirito Santo Pinhal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao joao boa vista.html">Sao Joao Boa Vista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santo antonio jardim.html">Santo Antonio Jardim</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mococa.html">Mococa</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cajuru.html">Cajuru</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_franca.html">Franca</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pedregulho.html">Pedregulho</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_igarapava.html">Igarapava</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_miguelopolis.html">Miguelopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aguai.html">Aguai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tapiratiba.html">Tapiratiba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_icem.html">Icem</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_terra roxa.html">Terra Roxa</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_jaborandi.html">Jaborandi</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa cruz esperanca.html">Santa Cruz Esperanca</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_divinolandia.html">Divinolandia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itobi.html">Itobi</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aguas prata.html">Aguas Prata</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cassia coqueiros.html">Cassia Coqueiros</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_serra azul.html">Serra Azul</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itirapua.html">Itirapua</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_restinga.html">Restinga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ribeirao corrente.html">Ribeirao Corrente</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_jeriquara.html">Jeriquara</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_buritizal.html">Buritizal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_rifaina.html">Rifaina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_colombia.html">Colombia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_altair.html">Altair</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pirapozinho.html">Pirapozinho</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_presidente epitacio.html">Presidente Epitacio</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tupa.html">Tupa</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_assis.html">Assis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bastos.html">Bastos</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_paraguacu paulista.html">Paraguacu Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_alvares machado.html">Alvares Machado</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lucelia.html">Lucelia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_osvaldo cruz.html">Osvaldo Cruz</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santo anastacio.html">Santo Anastacio</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_regente feijo.html">Regente Feijo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_teodoro sampaio.html">Teodoro Sampaio</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_presidente prudente.html">Presidente Prudente</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nova guataporanga.html">Nova Guataporanga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mirante paranapanema.html">Mirante Paranapanema</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_gabriel monteiro.html">Gabriel Monteiro</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sandovalina.html">Sandovalina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_echapora.html">Echapora</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tarabai.html">Tarabai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_oscar bressane.html">Oscar Bressane</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_oriente.html">Oriente</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_piacatu.html">Piacatu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_anhumas.html">Anhumas</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_queiroz.html">Queiroz</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_arco-iris.html">Arco-Iris</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_iacri.html">Iacri</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_piquerobi.html">Piquerobi</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bora.html">Bora</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_quata.html">Quata</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_presidente bernardes.html">Presidente Bernardes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_euclides cunha paulista.html">Euclides Cunha Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santo expedito.html">Santo Expedito</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_emilianopolis.html">Emilianopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ribeirao indios.html">Ribeirao Indios</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cruzalia.html">Cruzalia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pracinha.html">Pracinha</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_narandiba.html">Narandiba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_flora rica.html">Flora Rica</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santopolis aguapei.html">Santopolis Aguapei</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pedrinhas paulista.html">Pedrinhas Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sagres.html">Sagres</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_florida paulista.html">Florida Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_luiziania.html">Luiziania</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa mercedes.html">Santa Mercedes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_parapua.html">Parapua</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_salmourao.html">Salmourao</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lutecia.html">Lutecia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_florinea.html">Florinea</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_platina.html">Platina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_maraba paulista.html">Maraba Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mariapolis.html">Mariapolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_caiabu.html">Caiabu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_estrela norte.html">Estrela Norte</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_quintana.html">Quintana</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_rosana.html">Rosana</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_taciba.html">Taciba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_alfredo marcondes.html">Alfredo Marcondes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_alvaro carvalho.html">Alvaro Carvalho</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_maracai.html">Maracai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_taruma.html">Taruma</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_adamantina.html">Adamantina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_inubia paulista.html">Inubia Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa cruz rio pardo.html">Santa Cruz Rio Pardo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_capao bonito.html">Capao Bonito</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itapeva.html">Itapeva</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itarare.html">Itarare</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itapetininga.html">Itapetininga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_taquarituba.html">Taquarituba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_piraju.html">Piraju</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_avare.html">Avare</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ribeirao sul.html">Ribeirao Sul</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bom sucesso itarare.html">Bom Sucesso Itarare</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guapiara.html">Guapiara</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ribeirao branco.html">Ribeirao Branco</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nova campina.html">Nova Campina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ribeirao grande.html">Ribeirao Grande</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_taquarivai.html">Taquarivai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_buri.html">Buri</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao miguel arcanjo.html">Sao Miguel Arcanjo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pilar sul.html">Pilar Sul</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sarapui.html">Sarapui</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itabera.html">Itabera</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_riversul.html">Riversul</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itaporanga.html">Itaporanga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_barao antonina.html">Barao Antonina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_coronel macedo.html">Coronel Macedo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_taguai.html">Taguai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_fartura.html">Fartura</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sarutaia.html">Sarutaia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_timburi.html">Timburi</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guarei.html">Guarei</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_campina monte alegre.html">Campina Monte Alegre</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_angatuba.html">Angatuba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_paranapanema.html">Paranapanema</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itai.html">Itai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_espirito santo turvo.html">Espirito Santo Turvo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_alambari.html">Alambari</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bernardino campos.html">Bernardino Campos</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_oleo.html">Oleo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_arandu.html">Arandu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itatinga.html">Itatinga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_iaras.html">Iaras</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tejupa.html">Tejupa</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_galia.html">Galia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_duartina.html">Duartina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ubirajara.html">Ubirajara</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lupercio.html">Lupercio</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_alvinlandia.html">Alvinlandia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lucianopolis.html">Lucianopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_paulistania.html">Paulistania</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aguas santa barbara.html">Aguas Santa Barbara</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_fernao.html">Fernao</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cabreuva.html">Cabreuva</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_campo limpo paulista.html">Campo Limpo Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itatiba.html">Itatiba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_jarinu.html">Jarinu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_morungaba.html">Morungaba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mombuca.html">Mombuca</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_elias fausto.html">Elias Fausto</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_monte mor.html">Monte Mor</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itupeva.html">Itupeva</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_varzea paulista.html">Varzea Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_hortolandia.html">Hortolandia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_paulinia.html">Paulinia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_saltinho.html">Saltinho</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aguas sao pedro.html">Aguas Sao Pedro</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pardinho.html">Pardinho</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao roque.html">Sao Roque</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_piedade.html">Piedade</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_salto pirapora.html">Salto Pirapora</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tatui.html">Tatui</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_boituva.html">Boituva</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_laranjal paulista.html">Laranjal Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_botucatu.html">Botucatu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao manuel.html">Sao Manuel</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pederneiras.html">Pederneiras</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_agudos.html">Agudos</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_torrinha.html">Torrinha</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ibiuna.html">Ibiuna</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aracariguama.html">Aracariguama</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_areiopolis.html">Areiopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_quadra.html">Quadra</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_torre pedra.html">Torre Pedra</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_porangaba.html">Porangaba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bofete.html">Bofete</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_capela alto.html">Capela Alto</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ipero.html">Ipero</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aluminio.html">Aluminio</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cesario lange.html">Cesario Lange</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pratania.html">Pratania</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_anhembi.html">Anhembi</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_conchas.html">Conchas</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_boraceia.html">Boraceia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bocaina.html">Bocaina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_dourado.html">Dourado</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_charqueada.html">Charqueada</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_arealva.html">Arealva</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pereiras.html">Pereiras</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa_maria_serra.html">Santa Maria Serra</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_caraguatatuba.html">Caraguatatuba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao sebastiao.html">Sao Sebastiao</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ubatuba.html">Ubatuba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ilhabela.html">Ilhabela</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao lourenco_serra.html">Sao Lourenco Serra</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_juquitiba.html">Juquitiba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_iguape.html">Iguape</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_registro.html">Registro</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_jacupiranga.html">Jacupiranga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_juquia.html">Juquia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_apiai.html">Apiai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itariri.html">Itariri</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pedro toledo.html">Pedro Toledo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cananeia.html">Cananeia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ilha comprida.html">Ilha Comprida</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pariquera-acu.html">Pariquera-Acu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_barra turvo.html">Barra Turvo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cajati.html">Cajati</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_iporanga.html">Iporanga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_eldorado.html">Eldorado</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sete barras.html">Sete Barras</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_miracatu.html">Miracatu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itapirapua_paulista.html">Itapirapua Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ribeira.html">Ribeira</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itaoca.html">Itaoca</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_barra chapeu.html">Barra Chapeu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tapirai.html">Tapirai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_peruibe.html">Peruibe</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_itanhaem.html">Itanhaem</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_praia grande.html">Praia Grande</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao vicente.html">Sao Vicente</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cubatao.html">Cubatao</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santos.html">Santos</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guaruja.html">Guaruja</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bertioga.html">Bertioga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mongagua.html">Mongagua</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_vicente_carvalho.html">Vicente Carvalho</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_alto alegre.html">Alto Alegre</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nhandeara.html">Nhandeara</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cardoso.html">Cardoso</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_auriflama.html">Auriflama</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nova granada.html">Nova Granada</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_monte_aprazivel.html">Monte Aprazivel</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_jales.html">Jales</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_urania.html">Urania</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_novo horizonte.html">Novo Horizonte</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_fernandopolis.html">Fernandopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lins.html">Lins</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_monte_alto.html">Monte Alto</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nipoa.html">Nipoa</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_uniao_paulista.html">Uniao Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_moncoes.html">Moncoes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_presidente_alves.html">Presidente Alves</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_uru.html">Uru</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_valentim_gentil.html">Valentim Gentil</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_paulo faria.html">Paulo Faria</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_gastao_vidigal.html">Gastao Vidigal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_balbinos.html">Balbinos</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_zacarias.html">Zacarias</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_avai.html">Avai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_general salgado.html">General Salgado</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_onda_verde.html">Onda Verde</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_magda.html">Magda</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao francisco.html">Sao Francisco</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_orindiuva.html">Orindiuva</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_floreal.html">Floreal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_candido rodrigues.html">Candido Rodrigues</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_estrela d' oeste.html">Estrela D' Oeste</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_rubiacea.html">Rubiacea</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_piratininga.html">Piratininga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_planalto.html">Planalto</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pontalinda.html">Pontalinda</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_irapua.html">Irapua</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tres fronteiras.html">Tres Fronteiras</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pongai.html">Pongai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aparecida d' oeste.html">Aparecida D' Oeste</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sud mennucci.html">Sud Mennucci</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nova luzitania.html">Nova Luzitania</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_turiuba.html">Turiuba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_riolandia.html">Riolandia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pedranopolis.html">Pedranopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lourdes.html">Lourdes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guzolandia.html">Guzolandia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_rubineia.html">Rubineia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa albertina.html">Santa Albertina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao joao duas pontes.html">Sao Joao Duas Pontes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_indiapora.html">Indiapora</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mesopolis.html">Mesopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_coroados.html">Coroados</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pontes gestal.html">Pontes Gestal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa salete.html">Santa Salete</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa clara d' oeste.html">Santa Clara D' Oeste</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_palmeira d' oeste.html">Palmeira D' Oeste</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guarani d' oeste.html">Guarani D' Oeste</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_aspasia.html">Aspasia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_glicerio.html">Glicerio</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santana_ponte_pensa.html">Santana Ponte Pensa</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_mira estrela.html">Mira Estrela</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ouroeste.html">Ouroeste</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_adolfo.html">Adolfo</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_meridiano.html">Meridiano</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_nova canaa paulista.html">Nova Canaa Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_populina.html">Populina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_vitoria brasil.html">Vitoria Brasil</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa ernestina.html">Santa Ernestina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bento abreu.html">Bento Abreu</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_palmares paulista.html">Palmares Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sebastianopolis_sul.html">Sebastianopolis Sul</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_macedonia.html">Macedonia</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_turmalina.html">Turmalina</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_dirce reis.html">Dirce Reis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_ibira.html">Ibira</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_fernando prestes.html">Fernando Prestes</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_dolcinopolis.html">Dolcinopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_catigua.html">Catigua</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_marinopolis.html">Marinopolis</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_paranapua.html">Paranapua</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_brejo alegre.html">Brejo Alegre</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_poloni.html">Poloni</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cachoeira paulista.html">Cachoeira Paulista</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_campos jordao.html">Campos Jordao</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_pindamonhangaba.html">Pindamonhangaba</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_jambeiro.html">Jambeiro</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_cacapava.html">Cacapava</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_taubate.html">Taubate</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao jose campos.html">Sao Jose Campos</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_tremembe.html">Tremembe</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lorena.html">Lorena</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_silveiras.html">Silveiras</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_roseira.html">Roseira</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_guararema.html">Guararema</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao bento sapucai.html">Sao Bento Sapucai</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lavrinhas.html">Lavrinhas</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santo antonio pinhal.html">Santo Antonio Pinhal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_igarata.html">Igarata</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_redencao serra.html">Redencao Serra</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_lagoinha.html">Lagoinha</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_queluz.html">Queluz</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa isabel.html">Santa Isabel</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_sao luis paraitinga.html">Sao Luis Paraitinga</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_arapei.html">Arapei</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_monteiro lobato.html">Monteiro Lobato</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_bananal.html">Bananal</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_canas.html">Canas</a></div>
+<div class="grid-item"><a href="Kernel_Rotas_Rurais_santa branca.html">Santa Branca</a></div>
+    </div>
+</body>
+
+
+<h2>📂 Estrutura do Repositório</h2>
+    <p>O repositório contém os seguintes arquivos:</p>
+    <ul>
+        <li><strong>index.html</strong>: Página inicial com links para os mapas.</li>
+        <li><strong>Rotas_Rurais_*.html</strong>: Arquivos HTML individuais para cada grupo de rotas rurais.</li>
+        <li><strong>README.md</strong>: Documentação do projeto (este arquivo).</li>
+    </ul>
+
+    <h2>🗺️ Sobre os Mapas</h2>
+    <p>Cada mapa mostra as <strong>rotas rurais</strong> para diferentes grupos de municípios, organizados por regiões:</p>
+    <ul>
+        <li>RA, RB, RG, RM, RV, RT, RJ, RN, RR, RS.</li>
+    </ul>
+    <p>Os mapas foram gerados com a biblioteca <strong>Folium</strong> e são totalmente interativos.</p>
+
+    <h2>📦 Como Publicar Localmente</h2>
+    <p>Se você quiser executar os mapas localmente:</p>
+    <ol>
+        <li>Faça o download dos arquivos HTML.</li>
+        <li>Abra os arquivos no navegador.</li>
+    </ol>
+
+    <h2>🛠️ Tecnologias Utilizadas</h2>
+    <ul>
+        <li><a href="https://python-visualization.github.io/folium/">Folium</a>: Biblioteca Python para mapas interativos.</li>
+        <li>GitHub Pages: Hospedagem gratuita para os mapas.</li>
+    </ul>
+
+    <div class="footer">
+        <p>Desenvolvido por <strong>Fernando Yogi</strong> da Superintendência de Pesquisa, Desenvolvimento Tecnológico e Inovação. Departamento de Execução de Projetos de Pesquisa, Desenvolvimento e Inovação.</p>
+    </div>
+</body>
+
+</html>
+
