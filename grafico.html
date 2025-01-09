@@ -20,7 +20,7 @@
 
     <script>
         // Carregar o arquivo XLSX e preparar os dados
-        const df = await fetch('/content/drive/MyDrive/Geodados-20241206T001202Z-001/Grafico/DB_ReclassKernel_rec_NOME_BUSCA_Operados.xlsx')
+        const df = await fetch('DB_ReclassKernel_rec_NOME_BUSCA_Operados.xlsx')
             .then(response => response.arrayBuffer())
             .then(data => new Uint8Array(data));
 
